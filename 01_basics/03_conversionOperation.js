@@ -33,5 +33,36 @@ let stringNumber = String(someNumber);
 console.log(stringNumber);
 console.log(typeof stringNumber);
 
+//*********************************Operation******************************************************/
+console.log(100/4);
+console.log(19%4);
+console.log(2*3);
+console.log(2**3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log(1 + 2 + "4");
+console.log("1" + 2 + 3);
+
+console.log(true);
+console.log(+true);
+console.log(false);
+console.log(+false);
+
+
+console.log("play with empty string");
+
+console.log(+"");
+console.log(+"abc");
+
+let gameCounter = 100;
+console.log(gameCounter);
+console.log(gameCounter++);
+gameCounter = 100;
+console.log(++gameCounter);
+
+
+
+
 
 
