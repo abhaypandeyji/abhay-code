@@ -23,11 +23,6 @@ const anotherId = Symbol('123');
 
 const bigNumber = 9384759347598342759349857439574398578945743543574358943n;
 
-
-
-
-
-
 //# Reference (Non primitive)
 
 // Array, Objects, Functions
@@ -44,8 +39,36 @@ const myFuction = function(){
     console.log("Hare krishna");
 }
 
+// console.log(typeof bigNumber);
+// console.log(typeof outsideTemp);
+// console.log(typeof myFuction);  //it returns function but it call as Object function;
+// console.log("jai shree ram");
+// console.log(typeof anotherId);
 
-console.log(typeof bigNumber);
-console.log(typeof outsideTemp);
-console.log("jai shree ram");
+//https://tc39.es/ecma262/#sec-typeof-operator
 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack ( Primitive ), Heap ( Non-Primitive)
+
+let myYoutubeName = "hiteshchoudhary.com";
+
+let anotherName = myYoutubeName;
+anotherName = "chaiaurcode";
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "hihesh@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
