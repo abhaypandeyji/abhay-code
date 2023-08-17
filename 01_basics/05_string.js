@@ -42,6 +42,16 @@ const url = "https://hitesh.com/hitesh%20choudhary";
 console.log(url.replace('%20','_'));
 
 console.log(url.includes('hitesh'));
+console.log(url.includes('ram'));
+
+
+const supremeLordName = "krishna-ram-narshimha-vamandev-parshuram";
+console.log(supremeLordName.split('-'));
+
+console.log(gameName.bold());
+console.log(gameName.blink());
+
+
 
 
 
