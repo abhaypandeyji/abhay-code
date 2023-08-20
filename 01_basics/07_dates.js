@@ -1,38 +1,38 @@
 //Dates
 
 let myDate = new Date();
-// console.log(myDate);  
-// //2023-08-19T10:29:09.793Z 
+console.log(myDate);  
+//2023-08-19T10:29:09.793Z 
 
-// console.log(myDate.toString());
-// //Sat Aug 19 2023 10:26:16 GMT+0000 (Coordinated Universal Time)
+console.log(myDate.toString());
+//Sat Aug 19 2023 10:26:16 GMT+0000 (Coordinated Universal Time)
 
-// console.log(myDate.toDateString());
-// //Sat Aug 19 2023
+console.log(myDate.toDateString());
+//Sat Aug 19 2023
 
-// console.log(myDate.toISOString());
-// //2023-08-19T10:31:00.277Z
+console.log(myDate.toISOString());
+//2023-08-19T10:31:00.277Z
 
-// console.log(myDate.toJSON());
-// //2023-08-19T10:32:32.777Z
+console.log(myDate.toJSON());
+//2023-08-19T10:32:32.777Z
 
-// console.log(myDate.toLocaleDateString());
-// //8/19/2023
+console.log(myDate.toLocaleDateString());
+//8/19/2023
 
-// console.log(myDate.toLocaleString());
-// //8/19/2023, 10:36:49 AM
+console.log(myDate.toLocaleString());
+//8/19/2023, 10:36:49 AM
 
-// console.log(myDate.toLocaleString('en-IN'));
-// //19/8/2023, 10:35:15 am
+console.log(myDate.toLocaleString('en-IN'));
+//19/8/2023, 10:35:15 am
 
-// console.log(myDate.toLocaleTimeString());
-// //10:37:41 AM
+console.log(myDate.toLocaleTimeString());
+//10:37:41 AM
 
-// console.log(myDate.toTimeString());
-// //10:38:39 GMT+0000 (Coordinated Universal Time)
+console.log(myDate.toTimeString());
+//10:38:39 GMT+0000 (Coordinated Universal Time)
 
-// console.log(myDate.toUTCString());
-// //Sat, 19 Aug 2023 10:39:28 GMT
+console.log(myDate.toUTCString());
+//Sat, 19 Aug 2023 10:39:28 GMT
 
 // console.log(typeof myDate); //Date is object
 
@@ -81,7 +81,6 @@ console.log(newDate.getUTCDay());
 
 newDate.toLocaleDateString('default', {
     weekday: "long",
-
 });
 
 
