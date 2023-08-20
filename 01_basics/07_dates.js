@@ -54,13 +54,36 @@ let myTimeStamp = Date.now();
 // console.log(myCreatedDate.getTime());
 
 
-console.log(Date.now());
+//console.log(Date.now());
 //date in miliseconds this is use when we need to compare date in hotel management like applications
 
-console.log(Date.now()/1000);
+//console.log(Date.now()/1000);
 
-console.log(Math.floor(Date.now()/1000));
+//console.log(Math.floor(Date.now()/1000));
 //to avoid value in fraction we just need to use floor not ceil
+
+let newDate = new Date();
+console.log(newDate);
+console.log(newDate.getMonth());
+console.log(newDate.getDate());
+console.log(newDate.getDay());
+console.log(newDate.getFullYear());
+console.log(newDate.getHours());
+console.log(newDate.getMilliseconds());
+console.log(newDate.getMinutes());
+console.log(newDate.getSeconds());
+console.log(newDate.getTime());
+console.log(newDate.getTimezoneOffset());
+console.log(newDate.getUTCDate());
+console.log(newDate.getUTCDay());
+//above are methods used in application;
+
+
+newDate.toLocaleDateString('default', {
+    weekday: "long",
+
+});
+
 
 
 
