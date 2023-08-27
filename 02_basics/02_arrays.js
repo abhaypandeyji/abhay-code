@@ -7,7 +7,7 @@ marvel_heros.push(dc_heros);
 // console.log(marvel_heros[3][1]);
 // console.log(marvel_heros.length);  //length = 4;
 
-const marvel_heros.concat(dc_heros);
+marvel_heros =  marvel_heros.concat(dc_heros);
 console.log(marvel_heros);
 console.log(marvel_heros[3][1]); // print the array of array element
 console.log(marvel_heros.length);  //length = 4;
