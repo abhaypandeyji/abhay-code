@@ -25,4 +25,17 @@ const regularUser = {
 // console.log(regularUser.fullname);
 // console.log(regularUser.fullname.userfullname);  //only hint use of ?
 
-const obj1 = {1: "a", } 
+const obj1 = {1: "a", 2: "b"};
+const obj2 = {3: "b", 4: "b"};
+const obj3 = {5: "c", 6: "b"};
+
+//const obj4 = {obj1, obj2};
+//console.log(obj4);
+
+// const obj4 = Object.assign(obj1, obj2);
+// console.log(obj4);
+const obj4 = Object.assign({}, obj1, obj2);
+console.log(obj4);
+
+const obj5 = {...obj1, ...obj2};   //spread function to combine two or more object togethe;
+console.log(obj5);
