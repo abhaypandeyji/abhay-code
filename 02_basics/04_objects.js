@@ -39,3 +39,31 @@ console.log(obj4);
 
 const obj5 = {...obj1, ...obj2};   //spread function to combine two or more object togethe;
 console.log(obj5);
+
+
+const users = [
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+    {
+        id: 2,
+        email: "i@gmail.com"
+    },
+    {
+        id: 3,
+        email: "j@gmail.com"
+    },
+    {
+        id: 4,
+        email: "k@gmail.com"
+    }
+]
+
+users[1].email
+console.log(tinderUser);
+
+console.log(Object.keys(tinderUser));
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
+
