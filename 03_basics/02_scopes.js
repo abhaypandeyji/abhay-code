@@ -41,4 +41,26 @@ if(true){
 
 //console.log(username);
 
-/******************************************************** */
+/**************************** Interesting **************************** */
+
+
+console.log(addone(4));  //but this statement not throws error;
+
+
+function addone(num){
+    return num + 1;
+
+}
+
+console.log(addTow(5));  //ERROR   //here this statement throws error;
+
+const addTow  = function(num){
+    return num + 2;
+}
+
+console.log(addTow(5));  
+
+
+
+
+
