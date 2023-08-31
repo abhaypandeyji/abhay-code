@@ -6,9 +6,9 @@ if(true){
     let a = 10;
     const b = 20;
     var c = 30;
-    console.log(`Inner block a's value ${a}`);
+    //console.log(`Inner block a's value ${a}`);
 }
-console.log(`Outer block a's value ${a}`);
+//console.log(`Outer block a's value ${a}`);
 
 //console.log(a);
 //console.log(b);
@@ -22,10 +22,23 @@ function one(){
         console.log(username);
     
     }
-    console.log(website);
+    //console.log(website);
 
     two();
 }
 
 one();
 
+if(true){
+    const username = "krishna";
+    if(username === "krishna"){
+        const website = " youtube";
+        console.log(username + website);
+        
+    }
+    //console.log(website);
+}
+
+//console.log(username);
+
+/******************************************************** */
