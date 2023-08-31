@@ -60,13 +60,3 @@ let teacherName = "Hitesh";
 
 
 
-
-
-
-
-
-
-
-
-
-
