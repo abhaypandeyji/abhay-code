@@ -18,14 +18,14 @@ const myNums = [1,2,3,4,5,6,7,8,9,10];
 // });
 // console.log(newNums);
 
-// const newNums = [];
-// myNums.forEach( (num) =>{
-//     if(num > 4){
-//         newNums.push(num);
-//     }
-// })
+const newNums = [];
+myNums.forEach( (num) =>{
+    if(num > 4){
+        newNums.push(num);
+    }
+})
 
-// console.log(newNums);
+console.log(newNums);
 
 const books = [
     { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
