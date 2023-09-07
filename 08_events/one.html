@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>htnml Events </title>
+    <title>html Events </title>
 </head>
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
@@ -19,8 +19,63 @@
    </div>
 </body>
 <script>
-    document.getElementById('owl').onclick = function(){
-        alert("Jai shree krishna bolo jai Radhe");
-    }
+    // document.getElementById('owl').onclick = function(){
+    //     alert("Jai shree krishna bolo jai Radhe !");
+    // }
+    
+    //attachEvent
+    //jQuery
+
+    
+    //types, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget,
+    //clientX, clientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+
+    //Event propagation:
+    //Event propagation has two context 1.Event Bubbling|2.Event Capturing;
+    //when third parameter is false then this is called BUBBLING .
+    //when third parameter is true then this is called Capturing.
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log(e);
+    // },false);
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false);
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation
+    //     console.log();
+    // }, false);
+
+    // // const xyz = function(e){
+    // //     e.defaultPrevented();
+    // //     console.log("google clicked");
+    // // }
+    // // document.getElementById('goolgle').addEventListener('click', xyz,  false);
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("google clicked");
+    // }, false);
+
+    //CREATE AN APPLICATION TO HIDE THE IMAGES WHENEVER CLICKED THAT IMAGE
+
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+ 
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
+    
+        //removeIt.parentNode.removeChild(removeIt);
+
+    }, false)
 </script>
 </html>
