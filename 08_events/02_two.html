@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    console.log("krishna kripamurti A.C Bhakti Vedant Swami Maraj Prabhupad ki jai ho!")
+    setTimeout(function(){
+        console.log("Jai shree krishna!");
+    }, 2000)
+
+    const changeText = function(){
+        const h1 = document.querySelector('h1');
+        h1.innerHTML = "Shree Radha shree radha radha radha shree radha !";
+    }
+
+    /*
+    <YE MERA CODE HAI>
+
+    //const stopBtn = document.querySelector('#stop');    
+    //stopBtn.addEventListener('click', function(e){
+    //    setTimeout(changeText, 5000);
+    //});
+
+    //stopBtn.addEventListener('click', (e) => setTimeout(changeText, 5000));
+   
+    //stopBtn.addEventListener('click', setTimeout(changeText, 5000));
+    //TypeError: Failed to execute 'addEventListener' on 'EventTarget': 
+    //parameter 2 is not of type 'Object'.
+    
+    </YE MERA CODE HAI>
+    */
+
+    const stopTimeout = setTimeout(changeText, 5000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(stopTimeout);
+        console.log("STOPPED")
+    });
+
+    
+
+
+
+
+
+
+    
+
+</script>
+</html>
