@@ -13,10 +13,14 @@
     3	LOADING	Downloading; responseText holds partial data.
     4	DONE	The operation is complete. -->
     <br>
-    <button id="name">Name</button>
+    <!-- <img id="image" src="" alt="my photo"><br> -->
+    <!-- <button id="name">Name</button><br>
+    <button id="follower">Followers</button><br>
+    <button id="image">Image</button> -->
+
     
 
-    <img id="image" src="" alt="my photo">
+    
 </body>
 <script>
     const requestUrl = 'https://api.github.com/users/abhaypandeyji';
@@ -35,23 +39,84 @@
             console.log(data.name);
             console.log();
             const photaUrl = data.avatar_url;
+
+//Here name button is created using html and hamne dom se isko khecha hai;
+
+            // const name = document.querySelector('#name');
+            // const follower = document.querySelector('#follower');
+
+//Here I'll create these elements dynamically;            
+
+            const image = document.createElement('img');
+            image.src = photaUrl
+            
+            //document.body.appendChild(image);
+
+            const p = document.createElement('p');
+
+            const name = document.createElement('button');
+            const follower = document.createElement('button');
+            const id = document.createElement('button');
+            const photo = document.createElement('button');
+
             
 
-            const img = document.querySelector('#image');
-            // img.src = "https://avatars.githubusercontent.com/u/137700321?v=4";
-            img.src = photaUrl;
-            const p1 = document.createElement('p');
-            const p2 = document.createElement('p');
+            name.style.padding="10px";
+            name.style.margin="10px"
 
+            follower.style.padding="10px";
+            follower.style.margin="10px"
+
+            id.style.padding="10px";
+            id.style.margin="10px"
+
+            photo.style.padding="10px";
+            photo.style.margin="10px"
             
 
-            p.innerHTML = data.name;
-            document.body.appendChild(p);
+            name.innerHTML = "Name";
+            follower.innerHTML = "Followers"
+            id.innerHTML = "Id"
+            photo.innerHTML = "Photo"
 
 
+            document.body.appendChild(name);
+            document.body.appendChild(follower);
+            document.body.appendChild(id);
+            document.body.appendChild(photo);
+
+
+            photo.addEventListener('click',function(){
+                document.body.appendChild(image);
+            });
+
+            follower.addEventListener('click',function(){
+                
+                // const p1 = document.createElement('p');
+                // const p2 = document.createElement('p');
+                p.innerHTML = data.followers;
+                document.body.appendChild(p);
+
+            });
+
+            id.addEventListener('click',function(){
+                
+                // const p1 = document.createElement('p');
+                // const p2 = document.createElement('p');
+                p.innerHTML = data.id;
+                document.body.appendChild(p);
+
+            });
+
+            name.addEventListener('click',function(){
+                
+                // const p1 = document.createElement('p');
+                // const p2 = document.createElement('p');
+                p.innerHTML = data.name;
+                document.body.appendChild(p);
+
+            });
         }
-
-
     }
     xhr.send();
 
