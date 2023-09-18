@@ -12,6 +12,7 @@ let heroPower = {
     govind: "Conch",
     madhav: "mace",
     supremeperson: "sudarshanchakra",
+    completman: "padma-lotus",
 
     getSpiderPower: function(){
         console.log(`spidy power is ${this.krishna}`);
