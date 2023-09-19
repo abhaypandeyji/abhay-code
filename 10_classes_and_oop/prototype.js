@@ -37,3 +37,36 @@ heroPower.hites();
 myHeros.hites();
 myHeros.heyHitesh();
 // heroPower.heyHitesh();
+
+
+//Inheritance
+
+const User = {
+    name: "chai",
+    email: "chai@google.com"
+}
+
+const Teacher = {
+    makeVideo: true
+}
+
+const TeachingSupport = {
+    isAvailable: false
+}
+
+const TASupport = {
+    makeAssignment: 'JS assignment',
+    fullTime: true,             //Inheritance;
+    __proto__: TeachingSupport  //TASupport extends the properties of TeachingSupport
+}
+//______________________________or you can inherits using this method also____________________
+Teacher.__proto__ = User; //here Teacher inherits the User;
+
+//__________________________________Modern Method______________________________________________________________________
+
+
+
+
+
+
+
