@@ -64,9 +64,19 @@ Teacher.__proto__ = User; //here Teacher inherits the User;
 
 //__________________________________Modern Method______________________________________________________________________
 
+Object.setPrototypeOf(TeachingSupport, Teacher);
+//Here TeachingSupport is Child class and Teacher is class that extended means parent class; 
 
 
+let anotherUsername = "chaiAurCode";
 
+String.prototype.trueLength = function(){
+    console.log(`${this}`);
+    console.log(`True length is: ${this.trim().length}`);
+}
+
+anotherUsername.trueLength();
+"Jai shree krishna bolo jai radhe    ".trueLength();
 
 
 
